@@ -18,6 +18,7 @@ public class HelloController {
 	Employee emp2 = new Employee(2,"Sowji",12000);
 	Employee emp3 = new Employee(3,"Vivek",9000);
 	Employee emp4 = new Employee(4,"Sai",5000);
+	Employee emp5 = new Employee(5,"Suseela",15000);
 	
 	List<Employee> employees = new ArrayList<Employee>();
 
@@ -35,6 +36,12 @@ public class HelloController {
 	@RequestMapping("/all")
 	public List<Employee> getAll() {
 			
+		employees.add(emp1);
+		employees.add(emp2);
+		employees.add(emp3);
+		employees.add(emp4);
+		employees.add(emp5);
+		
 		return employees;
 	}
 	
