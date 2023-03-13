@@ -15,6 +15,7 @@
 	<name>demo</name>
 	<description>Demo project for Spring Boot</description>
 	<properties>
+		<tomcat.version>9.0.73</tomcat.version>
 		<java.version>17</java.version>
 	</properties>
 	<dependencies>
