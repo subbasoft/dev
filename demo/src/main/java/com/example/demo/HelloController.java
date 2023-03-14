@@ -36,12 +36,7 @@ public class HelloController {
 	
 	@RequestMapping("/all")
 	public List<Employee> getAll() {
-		employees = new ArrayList<Employee>();
-		employees.add(emp1);
-		employees.add(emp2);
-		employees.add(emp3);
-		employees.add(emp4);
-		employees.add(emp5);
+
 		
 		return employees;
 	}
