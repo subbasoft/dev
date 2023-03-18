@@ -20,8 +20,7 @@ import com.subbasoft.service.EmpServiceImpl;
 @RestController
 public class HelloController {
 	
-	 @Autowired
-	 EmpService empService;
+	private EmpService empService;
 	
 	List<Employee> employees = new ArrayList<Employee>();
 
