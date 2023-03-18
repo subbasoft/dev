@@ -16,7 +16,7 @@ import lombok.extern.slf4j.Slf4j;
 @Service @RequiredArgsConstructor @Transactional @Slf4j
 public class EmpServiceImpl implements EmpService{
 	
-	private final EmployeeRepo empRepo = null;
+	private EmployeeRepo empRepo;
 
 
 	@Override
