@@ -4,6 +4,7 @@ package com.example.demo;
 import java.util.ArrayList;
 import java.util.List;
 
+import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.context.annotation.Bean;
 import org.springframework.http.MediaType;
 import org.springframework.web.bind.annotation.DeleteMapping;
@@ -19,7 +20,8 @@ import com.subbasoft.service.EmpServiceImpl;
 @RestController
 public class HelloController {
 	
-	private EmpService empService;
+	 @Autowired
+	 EmpService empService;
 	
 	List<Employee> employees = new ArrayList<Employee>();
 

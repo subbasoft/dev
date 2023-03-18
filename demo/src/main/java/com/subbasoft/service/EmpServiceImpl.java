@@ -2,6 +2,7 @@ package com.subbasoft.service;
 
 import java.util.List;
 
+import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Service;
 
 import com.example.demo.Employee;
@@ -14,7 +15,8 @@ import lombok.RequiredArgsConstructor;
 @Service @RequiredArgsConstructor @Transactional
 public class EmpServiceImpl implements EmpService{
 	
-	private EmployeeRepo empRepo;
+	@Autowired
+	EmployeeRepo empRepo;
 
 
 	@Override
