@@ -2,7 +2,6 @@ package com.subbasoft.service;
 
 import java.util.List;
 
-import org.springframework.context.annotation.Bean;
 import org.springframework.stereotype.Service;
 
 import com.example.demo.Employee;
@@ -10,10 +9,9 @@ import com.subbasoft.repo.EmployeeRepo;
 
 import jakarta.transaction.Transactional;
 import lombok.RequiredArgsConstructor;
-import lombok.extern.slf4j.Slf4j;
 
 
-@Service @RequiredArgsConstructor @Transactional @Slf4j
+@Service @RequiredArgsConstructor @Transactional
 public class EmpServiceImpl implements EmpService{
 	
 	private EmployeeRepo empRepo;

@@ -19,7 +19,7 @@ import com.subbasoft.service.EmpServiceImpl;
 @RestController
 public class HelloController {
 	
-	private final EmpService empService = new EmpServiceImpl();
+	private EmpService empService;
 	
 	List<Employee> employees = new ArrayList<Employee>();
 
@@ -40,7 +40,7 @@ public class HelloController {
 	@PostMapping(path = "/emp/add", 
 	        consumes = MediaType.APPLICATION_JSON_VALUE)
 	public void addEmployee(@RequestBody Employee emp) {
-		employees.add(emp);
+		empService.saveEmployee(emp);
 	}
 	
 //	@DeleteMapping(path = "/emp/delete/{empId}")
