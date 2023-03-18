@@ -4,6 +4,7 @@ package com.example.demo;
 import java.util.ArrayList;
 import java.util.List;
 
+import org.springframework.context.annotation.Bean;
 import org.springframework.http.MediaType;
 import org.springframework.web.bind.annotation.DeleteMapping;
 import org.springframework.web.bind.annotation.PathVariable;
@@ -13,11 +14,12 @@ import org.springframework.web.bind.annotation.RequestMapping;
 import org.springframework.web.bind.annotation.RestController;
 
 import com.subbasoft.service.EmpService;
+import com.subbasoft.service.EmpServiceImpl;
 
 @RestController
 public class HelloController {
 	
-	private final EmpService empService = null;
+	private final EmpService empService = new EmpServiceImpl();
 	
 	List<Employee> employees = new ArrayList<Employee>();
 

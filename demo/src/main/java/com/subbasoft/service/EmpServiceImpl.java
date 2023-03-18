@@ -2,6 +2,7 @@ package com.subbasoft.service;
 
 import java.util.List;
 
+import org.springframework.context.annotation.Bean;
 import org.springframework.stereotype.Service;
 
 import com.example.demo.Employee;
